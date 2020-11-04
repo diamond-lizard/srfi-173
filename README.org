@@ -1,8 +1,8 @@
 * SRFI 173: Hooks
-** Introduction
-This Chicken extension is a port of [[https://srfi.schemers.org/srfi-173/srfi-173.html][SRFI 173: Hooks]]
 ** Abstract
 This library describes a mechanism known as hooks. Hooks are a certain kind of extension point in a program that allows interleaving the execution of arbitrary code with the execution of the program without introducing any coupling between the two.
+
+For more information see: [[https://srfi.schemers.org/srfi-173/srfi-173.html][SRFI 173: Hooks]]
 ** Rationale
 The use of hooks is pervasive in GNU Emacs and many other programs that offer some "plugin" mechanism that is built on top a facility similar to what this library offers.
 
