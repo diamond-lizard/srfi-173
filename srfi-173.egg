@@ -1,0 +1,9 @@
+;;; srfi-1.egg -*- Scheme -*- vim: ft=scheme:
+
+((synopsis "SRFI-173 Hooks")
+ (author "Amirouche Boubekki")
+ (maintainer "Sergey Goldgaber")
+ (category lang-exts)
+ (test-dependencies test)
+ (license "MIT")
+ (components (extension srfi-173)))
