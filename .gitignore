@@ -4,3 +4,4 @@
 *.link
 *.import.scm
 *.sh
+*.log
