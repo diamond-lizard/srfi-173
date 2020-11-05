@@ -59,3 +59,5 @@
           (hook-add! hook decrement)
           (hook-run hook)
           counter))
+
+(test-exit)
