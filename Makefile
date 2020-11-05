@@ -1,10 +1,10 @@
-CHICKEN_CLEAN	:= chicken-clean
+CHICKEN_CLEAN		:= chicken-clean
 MARKDOWN_SVNWIKI	:= markdown-svnwiki
-README_MD	:= README.md
-README_ORG	:= README.org
-README_SVNWIKI  := README.svnwiki
-SALMONELLA	:= salmonella
-SALMONELLA_LOG	:= salmonella.log
+README_MD		:= README.md
+README_ORG		:= README.org
+README_SVNWIKI  	:= README.svnwiki
+SALMONELLA		:= salmonella
+SALMONELLA_LOG		:= salmonella.log
 
 all: doc test
 
