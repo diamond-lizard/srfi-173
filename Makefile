@@ -8,6 +8,10 @@ SALMONELLA_LOG		:= salmonella.log
 
 all: doc test
 
+clean:
+	$(CHICKEN_CLEAN)
+	rm -f $(SALMONELLA_LOG)
+
 doc: $(README_SVNWIKI)
 
 $(README_SVNWIKI): $(README_MD)
@@ -15,7 +19,3 @@ $(README_SVNWIKI): $(README_MD)
 
 test:
 	$(SALMONELLA)
-
-clean:
-	$(CHICKEN_CLEAN)
-	rm -f $(SALMONELLA_LOG)
