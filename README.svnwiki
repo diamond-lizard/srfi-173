@@ -1,22 +1,25 @@
 
 == Table of Contents
 [[toc:]]
-# [[#org3071646|SRFI 173: Hooks]]# [[#org55b9e70|Abstract]]
-# [[#org56337de|Rationale]]
-# [[#orgefa09c9|Specification]]
-# [[#org84c1b74|Implementation Notes]]
-# [[#org7ec0231|Acknowledgements]]
-# [[#orgc4e657c|Author]]
-# [[#org5e151bc|Copyright]]
+# [[#orgf9ebaf9|SRFI 173: Hooks]]# [[#org0973b67|Abstract]]
+# [[#org1b1b345|Rationale]]
+# [[#org4de4b97|Specification]]
+# [[#orgc00b204|Implementation Notes]]
+# [[#org8675681|Acknowledgements]]
+# [[#orgb109d68|Author]]
+# [[#org47253bb|Copyright]]
+# [[#orga1b7c9f|Version history]]# [[#org8ae9aef|0.1]]
 
 
 
-a@idorg3071646
+
+
+a@idorgf9ebaf9
 
 
 == SRFI 173: Hooks
 [[toc:]]
-a@idorg55b9e70
+a@idorg0973b67
 
 
 === Abstract
@@ -24,7 +27,7 @@ This library describes a mechanism known as hooks. Hooks are a certain kind of e
 
 For more information see: [[https://srfi.schemers.org/srfi-173/srfi-173.html|SRFI 173: Hooks]]
 
-a@idorg56337de
+a@idorg1b1b345
 
 
 === Rationale
@@ -32,7 +35,7 @@ The use of hooks is pervasive in GNU Emacs and many other programs that offer so
 
 While building programs, there is a need to offer extension points to allow the user to extend and customize the execution of the program in way that avoids coupling. This library wants to help with that.
 
-a@idorgefa09c9
+a@idorg4de4b97
 
 
 === Specification
@@ -77,25 +80,25 @@ length of ARGS is not equal to the arity of the HOOK object.
 
 In a Scheme with invokable objects, hooks can invoked directly.
 
-a@idorg84c1b74
+a@idorgc00b204
 
 
 === Implementation Notes
 The reference implementation from SRFI-173 was used verbatim, with the exception of a single call to {{assume}} from [[https://srfi.schemers.org/srfi-145/srfi-145.html|SRFI 145]], which was replaced with {{assert}}.
 
-a@idorg7ec0231
+a@idorg8675681
 
 
 === Acknowledgements
 This specification is based on the GNU Guile module called [[https://www.gnu.org/software/guile/manual/html_node/Hooks.html#Hooks|hook]].
 
-a@idorgc4e657c
+a@idorgb109d68
 
 
 === Author
 The SRFI-173 library author is Amirouche Boubekki.  It was ported to Chicken by Sergey Goldgaber.
 
-a@idorg5e151bc
+a@idorg47253bb
 
 
 === Copyright
@@ -106,4 +109,14 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+a@idorga1b7c9f
+
+
+=== Version history
+a@idorg8ae9aef
+
+
+==== 0.1
+Ported to Chicken 5.2.0
 
