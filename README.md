@@ -1,22 +1,24 @@
 
 # Table of Contents
 
-1.  [SRFI 173: Hooks](#org3071646)
-    1.  [Abstract](#org55b9e70)
-    2.  [Rationale](#org56337de)
-    3.  [Specification](#orgefa09c9)
-    4.  [Implementation Notes](#org84c1b74)
-    5.  [Acknowledgements](#org7ec0231)
-    6.  [Author](#orgc4e657c)
-    7.  [Copyright](#org5e151bc)
+1.  [SRFI 173: Hooks](#orgf9ebaf9)
+    1.  [Abstract](#org0973b67)
+    2.  [Rationale](#org1b1b345)
+    3.  [Specification](#org4de4b97)
+    4.  [Implementation Notes](#orgc00b204)
+    5.  [Acknowledgements](#org8675681)
+    6.  [Author](#orgb109d68)
+    7.  [Copyright](#org47253bb)
+    8.  [Version history](#orga1b7c9f)
+        1.  [0.1](#org8ae9aef)
 
 
-<a id="org3071646"></a>
+<a id="orgf9ebaf9"></a>
 
 # SRFI 173: Hooks
 
 
-<a id="org55b9e70"></a>
+<a id="org0973b67"></a>
 
 ## Abstract
 
@@ -25,7 +27,7 @@ This library describes a mechanism known as hooks. Hooks are a certain kind of e
 For more information see: [SRFI 173: Hooks](https://srfi.schemers.org/srfi-173/srfi-173.html)
 
 
-<a id="org56337de"></a>
+<a id="org1b1b345"></a>
 
 ## Rationale
 
@@ -34,7 +36,7 @@ The use of hooks is pervasive in GNU Emacs and many other programs that offer so
 While building programs, there is a need to offer extension points to allow the user to extend and customize the execution of the program in way that avoids coupling. This library wants to help with that.
 
 
-<a id="orgefa09c9"></a>
+<a id="org4de4b97"></a>
 
 ## Specification
 
@@ -80,28 +82,28 @@ length of ARGS is not equal to the arity of the HOOK object.
 In a Scheme with invokable objects, hooks can invoked directly.
 
 
-<a id="org84c1b74"></a>
+<a id="orgc00b204"></a>
 
 ## Implementation Notes
 
 The reference implementation from SRFI-173 was used verbatim, with the exception of a single call to `assume` from [SRFI 145](https://srfi.schemers.org/srfi-145/srfi-145.html), which was replaced with `assert`.
 
 
-<a id="org7ec0231"></a>
+<a id="org8675681"></a>
 
 ## Acknowledgements
 
 This specification is based on the GNU Guile module called [hook](https://www.gnu.org/software/guile/manual/html_node/Hooks.html#Hooks).
 
 
-<a id="orgc4e657c"></a>
+<a id="orgb109d68"></a>
 
 ## Author
 
 The SRFI-173 library author is Amirouche Boubekki.  It was ported to Chicken by Sergey Goldgaber.
 
 
-<a id="org5e151bc"></a>
+<a id="org47253bb"></a>
 
 ## Copyright
 
@@ -112,4 +114,16 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice (including the next paragraph) shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+<a id="orga1b7c9f"></a>
+
+## Version history
+
+
+<a id="org8ae9aef"></a>
+
+### 0.1
+
+Ported to Chicken 5.2.0
 
