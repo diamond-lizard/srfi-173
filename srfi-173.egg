@@ -1,4 +1,4 @@
-;;; srfi-1.egg -*- Scheme -*- vim: ft=scheme:
+;;; srfi-173.egg -*- Scheme -*- vim: ft=scheme:
 
 ((synopsis "SRFI-173 Hooks")
  (author "Amirouche Boubekki")
